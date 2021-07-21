@@ -1,0 +1,25 @@
+@mixin middle-line-text {
+  display: flex;
+  flex-direction: row;
+
+  &::after,
+  &::before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+    max-width: 0.5em;
+    min-width: 0.14em;
+  }
+  &::before {
+    margin-right: 0.3rem;
+  }
+  &::after {
+    margin-left: 0.7rem;
+  }
+}
+
+@mixin font-handwrite {
+  font-family: "Great Vibes", cursive;
+  @include middle-line-text;
+}

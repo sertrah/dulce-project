@@ -1,0 +1,142 @@
+@import "mixins";
+
+.aboutUs {
+  margin-top: 4rem;
+  text-align: end;
+  .aboutUs_title {
+    color: #af7c58;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+}
+
+.coverpage {
+  height: 400px;
+  width: 100%;
+  background-color: #ccc;
+  background-image: url("/img/bgmovil.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .coverpageOverlay {
+    background: #8f8f8f57;
+    height: 100%;
+  }
+  .coverpageTitle {
+    position: absolute;
+    color: #fff;
+    bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    .coverpageTitle_handwrite {
+      font-size: 6rem;
+      @include font-handwrite;
+    }
+  }
+}
+.menu {
+  .menu_card {
+    overflow: hidden;
+    width: 88%;
+    margin: auto;
+    margin-top: 6rem;
+    text-align: center;
+    background-image: url("/img/bgcards.png");
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom: 3rem;
+    .menu_image {
+      width: 100%;
+      height: 20rem;
+      background-image: url("/img/dulcedd.jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+    .menu_subtitle {
+      color: #af7c58;
+      margin: 0px;
+      margin-top: 2rem;
+      font-size: 3rem;
+      @include font-handwrite;
+    }
+    .menu_title {
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+      color: #5a5a5a;
+    }
+    button.menu_btn {
+      background: #af7c58;
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 100;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.reservation {
+  padding: 3.2rem;
+  margin-top: 9rem;
+  margin-bottom: 8rem;
+  background-image: url("/img/fondo.png");
+  background-position: bottom;
+  background-size: contain;
+  text-align: center;
+}
+.updates {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+  margin-top: 4rem;
+
+  .roundButton {
+    width: 8rem;
+    height: 8rem;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    border-radius:50%;
+  }
+}
+
+
+.location{
+  .menu_card {
+    overflow: hidden;
+    width: 88%;
+    margin: auto;
+    margin-top: 6rem;
+    text-align: center;
+    background-image: url("/img/bgcards.png");
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom: 3rem;
+    .menu_image {
+      width: 100%;
+      height: 20rem;
+      background-image: url("/img/dulcedd.jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+    .menu_subtitle {
+      color: #af7c58;
+      margin: 0px;
+      margin-top: 2rem;
+      font-size: 3rem;
+      @include font-handwrite;
+    }
+    .menu_title {
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+      color: #5a5a5a;
+    }
+    button.menu_btn {
+      background: #af7c58;
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 100;
+      margin-bottom: 2rem;
+    }
+  }
+}
