@@ -45,7 +45,7 @@ const Menu = () => {
           <div className={styles.menu_image}> </div>
           <h3 className={styles.menu_subtitle}>Antojate</h3>
           <h2 className={styles.menu_title}>BRUNCH</h2>
-          <Button variant="contained" color="primary">
+          <Button variant="contained" color="secondary">
             take a bit
           </Button>
         </div>
@@ -54,7 +54,7 @@ const Menu = () => {
           <div className={styles.menu_image}> </div>
           <h3 className={styles.menu_subtitle}>Antojate</h3>
           <h2 className={styles.menu_title}>BRUNCH</h2>
-          <Button variant="contained" color="primary">
+          <Button variant="contained" color="secondary">
             take a bit
           </Button>
         </div>
@@ -63,7 +63,7 @@ const Menu = () => {
           <div className={styles.menu_image}> </div>
           <h3 className={styles.menu_subtitle}>Antojate</h3>
           <h2 className={styles.menu_title}>BRUNCH</h2>
-          <Button variant="contained" color="primary">
+          <Button variant="contained" color="secondary">
             take a bit
           </Button>
         </div>

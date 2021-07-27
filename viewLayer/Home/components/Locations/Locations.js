@@ -5,12 +5,12 @@ const Locations = () => {
     <section className={styles.location}>
       <div className={styles.menu_card}>
         <div className={styles.menu_image}> </div>
-        <h2 className={styles.menu_title}>Punto de atencion al cliente Envigado</h2>
+        <h3 className={styles.menu_subtitle}>Punto de atencion al cliente Envigado</h3>
       </div>
 
       <div className={styles.menu_card}>
         <div className={styles.menu_image}> </div>
-        <h2 className={styles.menu_title}>Punto de atencion al cliente Santafe</h2>
+        <h3 className={styles.menu_subtitle}>Punto de atencion al cliente Santafe</h3>
       </div>
     </section>
   );

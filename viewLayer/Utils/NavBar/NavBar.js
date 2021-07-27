@@ -67,35 +67,27 @@ const NavBar = () => {
         </div>
         <ul className={styles.navitem}>
           <li>
-            <h2>
-              <Link className="aboutUs_link" href="/" color="secondary">
-                HOME
-              </Link>
-            </h2>
+            <Link className={styles.navitemLink} href="/" color="secondary">
+              HOME
+            </Link>
           </li>
           <li>
-            <h2>
-              <Link className="aboutUs_link" href="/" color="secondary">
-                ABOUT US
-              </Link>
-            </h2>
+            <Link className={styles.navitemLink} href="/" color="secondary">
+              ABOUT US
+            </Link>
           </li>
           <li>
-            <h2>
-              <Link className="aboutUs_link" href="/" color="secondary">
-                MENU
-              </Link>
-            </h2>
+            <Link className={styles.navitemLink} href="/" color="secondary">
+              MENU
+            </Link>
           </li>
           <li>
-            <h2>
-              <Link className="aboutUs_link" href="/" color="secondary">
-                CONTACT US
-              </Link>
-            </h2>
+            <Link className={styles.navitemLink} href="/" color="secondary">
+              CONTACT US
+            </Link>
           </li>
         </ul>
-        <div className="nav-redes">
+        <div className={styles.navRedes}>
           <FacebookIcon />
           <InstagramIcon />
           <WhatsAppIcon />

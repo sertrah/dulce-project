@@ -63,9 +63,6 @@
   li {
     list-style: none;
     margin: 4rem 0rem;
-    h2 {
-      font-weight: 400;
-    }
   }
   &::before {
     content: "........";
@@ -83,6 +80,10 @@
     left: 0;
     right: 0;
   }
+  &Link{
+    font-weight: 400;
+    font-size: 3.2rem;
+  }
 }
 
 .nav_mobile {
@@ -96,7 +97,7 @@
     color: #af7c58;
   }
 }
-.nav-redes {
+.navRedes {
   color: #af7c58;
   position: absolute;
   bottom: 0rem;
