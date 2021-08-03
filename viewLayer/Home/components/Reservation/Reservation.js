@@ -1,5 +1,6 @@
 import Button from "@material-ui/core/Button";
 
+import "./style.scss";
 
 import styles from "../../../../styles/Home.module.scss";
 
