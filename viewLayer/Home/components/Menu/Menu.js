@@ -1,5 +1,6 @@
 import styles from "../../../../styles/Home.module.scss";
 import Button from "@material-ui/core/Button";
+import Avellanas from "../../../../public/img/Avellanas.svg";
 
 /* 
 import { Paper } from "@material-ui/core";
@@ -41,35 +42,21 @@ const Menu = () => {
   return (
     <>
       <section className={styles.menu}>
-        <div className={styles.menu_card}>
-          <div className={styles.menu_image}> </div>
-          <h3 className={styles.menu_subtitle}>Antojate</h3>
-          <h2 className={styles.menu_title}>BRUNCH</h2>
-          <Button variant="contained" color="secondary">
-            take a bit
-          </Button>
+        <div className={styles.menu_favorites}> 
+           <h1 className={styles.menu_title}>Nuestros FAVORITOS</h1>
+           < Avellanas />
         </div>
 
         <div className={styles.menu_card}>
           <div className={styles.menu_image}> </div>
-          <h3 className={styles.menu_subtitle}>Antojate</h3>
-          <h2 className={styles.menu_title}>BRUNCH</h2>
-          <Button variant="contained" color="secondary">
-            take a bit
-          </Button>
-        </div>
-
-        <div className={styles.menu_card}>
-          <div className={styles.menu_image}> </div>
-          <h3 className={styles.menu_subtitle}>Antojate</h3>
-          <h2 className={styles.menu_title}>BRUNCH</h2>
+          <h2 className={styles.menu_title}>Antojate <br/> <span className={styles.menu_title_subtitle}> BRUNCH</span></h2>
           <Button variant="contained" color="secondary">
             take a bit
           </Button>
         </div>
       </section>
     </>
-  );
-};
+  );  
+}
 
 export default Menu;

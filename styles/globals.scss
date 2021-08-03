@@ -1,3 +1,16 @@
+
+:root {
+  --cafe: #AF7C58;
+  --amarillo:#FBF3C8 ;
+  --gris: #E5E5E5;
+  --azulAcua:#B8DCD7;
+  --verde:#9B9578;
+}
+body {
+  background-color:#FFF9EE !important;
+}
+
+
 :root {
   color-scheme: light;
 }
@@ -10,8 +23,11 @@ h2 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
 }
+
 div.MuiPaper-root.MuiDrawer-paper{
   background-color: #B3D6D1;
   width: 100vw;
   position: relative;
 }
+
+

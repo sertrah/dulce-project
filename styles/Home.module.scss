@@ -35,7 +35,54 @@
   }
 }
 .menu {
+  .menu_favorites {
+    font-weight: 100;
+    font-size: x-large;
+    color: var(--cafe);
+    text-align: center;
+    border: 2px solid var(--gris);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-right: 60px;
+    padding-left: 60px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 7rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: var(--amarillo);
+      height: 0.4rem;
+      bottom: -0.19rem;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 98%;
+      height: 91%;
+      left: 0;
+      right: 0;
+      background: var(--amarillo);
+      margin: auto;
+      z-index: -1;
+    }
+  }
+   svg {
+    color: var(--azulAcua);
+    width: 5.8rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -2rem;
+    z-index: 1;
+   }
   .menu_card {
+    box-shadow: 4rem;
     overflow: hidden;
     border-radius: 5px;
     width: 80%;
@@ -53,21 +100,24 @@
       background-size: cover;
       background-position: center;
     }
-    .menu_subtitle {
-      color: #af7c58;
-      margin: 0px;
-      margin-top: 2rem;
-      font-size: 3rem;
-      @include font-handwrite;
-    }
+    
     .menu_title {
-      margin-top: 1rem;
-      margin-bottom: 4rem;
-      color: #8f8f8f;
+      background-color: var(--verde);
+      padding: 10px;
+      color: var(--amarillo);
+      font-size: 3rem;
+      font-family: "great Vibes";
+      .menu_title_subtitle{
+        color: var(--amarillo);
+        margin: 0px;
+        margin-top: 2rem;
+        font-size: 3rem;
+        font-family: auto;
+      }
     }
     button.menu_btn {
-      background: #af7c58;
-      color: #fff;
+      background: var(--amarillo);
+      color: var(--cafe);
       font-size: 1.6rem;
       font-weight: 100;
       margin-bottom: 2rem;
@@ -79,13 +129,12 @@
   padding: 3.2rem;
   margin-top: 9rem;
   margin-bottom: 8rem;
-  background-image: url("/img/fondo.png");
+  background-image: url("/img/fondopng");
   background-position: bottom;
   background-size: contain;
   text-align: center;
 }
 .updates {
-  background-color: #EFE7DC;
   display: flex;
   justify-content: space-around;
   padding: 4rem 0rem;
