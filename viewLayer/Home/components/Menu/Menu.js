@@ -42,21 +42,24 @@ const Menu = () => {
   return (
     <>
       <section className={styles.menu}>
-        <div className={styles.menu_favorites}> 
-           <h1 className={styles.menu_title}>Nuestros FAVORITOS</h1>
-           < Avellanas />
+        <div className={styles.menu_favorites}>
+          <h1 className={styles.menu_title}>Nuestros FAVORITOS</h1>
+          < Avellanas className={styles.menu_logo} />
         </div>
 
         <div className={styles.menu_card}>
           <div className={styles.menu_image}> </div>
-          <h2 className={styles.menu_title}>Antojate <br/> <span className={styles.menu_title_subtitle}> BRUNCH</span></h2>
-          <Button variant="contained" color="secondary">
-            take a bit
-          </Button>
+          <h2 className={styles.menu_title}>
+            <span className={styles.menu_title_subtitle}>Antojate </span>
+            BRUNCH</h2>
+
+          <Button className={styles.menu_btn}>
+            probar
+          </Button >
         </div>
       </section>
     </>
-  );  
+  );
 }
 
 export default Menu;
