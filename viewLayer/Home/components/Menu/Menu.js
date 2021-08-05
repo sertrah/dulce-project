@@ -1,6 +1,6 @@
 import styles from "../../../../styles/Home.module.scss";
 import Button from "@material-ui/core/Button";
-import Avellanas from "../../../../public/img/Avellanas.svg";
+import TitleWithIcon from "../../../../components/TitleWithIcon";
 
 /* 
 import { Paper } from "@material-ui/core";
@@ -42,10 +42,7 @@ const Menu = () => {
   return (
     <>
       <section className={styles.menu}>
-        <div className={styles.menu_favorites}>
-          <h1 className={styles.menu_title}>Nuestros FAVORITOS</h1>
-          < Avellanas className={styles.menu_logo} />
-        </div>
+        <TitleWithIcon>Nuestros FAVORITOS </TitleWithIcon>
 
         <div className={styles.menu_card}>
           <div className={styles.menu_image}> </div>
@@ -53,7 +50,7 @@ const Menu = () => {
             <span className={styles.menu_title_subtitle}>Antojate </span>
             BRUNCH</h2>
 
-          <Button className={styles.menu_btn}>
+          <Button size="large" variant="contained" className={styles.menu_btn}>
             probar
           </Button >
         </div>

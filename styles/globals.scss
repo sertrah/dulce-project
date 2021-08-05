@@ -1,13 +1,17 @@
 
 :root {
   --cafe: #AF7C58;
-  --amarillo:#FBF3C8 ;
+  --amarillo:#FBF3C8;
+  --yellow-light: #FFF9EE;
   --gris: #E5E5E5;
   --azulAcua:#B8DCD7;
   --verde:#9B9578;
+  --pink :#F4C2C2;
+  --white :#FFF;
+  --black :#000;
 }
 body {
-  background-color:#FFF9EE !important;
+  background-color: var(--yellow-light) !important;
 }
 
 
@@ -18,9 +22,13 @@ html {
   font-size: 62.5%;
 }
 
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
 h2 {
   font-size: 3.2rem;
-  font-family: 'Quicksand', sans-serif;
   font-weight: 300;
 }
 

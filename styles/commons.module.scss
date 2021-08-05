@@ -1,0 +1,53 @@
+.titleWithIcon {
+  color: var(--cafe);
+  text-align: center;
+  border: 1px solid var(--azulAcua);
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-bottom: 1rem;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 7rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--yellow-light);
+    height: 0.4rem;
+    bottom: -0.19rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 98%;
+    height: 91%;
+    left: 0;
+    right: 0;
+    background: var(--amarillo);
+    margin: auto;
+    z-index: -1;
+  }
+  .titleWithIcon_logo {
+    color: var(--azulAcua);
+    width: 5.8rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -2rem;
+    z-index: 1;
+    path {
+      stroke: var(--azulAcua);
+      stroke-width: 3.2px;
+    }
+  }
+  .titleWithIcon_title {
+    margin: 1.2rem 0;
+    width: 100%;
+  }
+}

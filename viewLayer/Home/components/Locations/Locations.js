@@ -1,17 +1,31 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../../styles/Home.module.scss";
+import TitleWithIcon from "../../../../components/TitleWithIcon";
+
+const locationsView = [
+  { img: 'https://santafesitioweb.s3.amazonaws.com/sitio-web/brand_gallery_images/951009/data_original.?1616522422', title: 'Punto de venta', text: 'CC santafe' },
+  { img: 'https://santafesitioweb.s3.amazonaws.com/sitio-web/brand_gallery_images/951009/data_original.?1616522422', title: 'Planta de produccion', text: 'Evnigado' },
+];
 
 const Locations = () => {
   return (
     <section className={styles.location}>
-      <div className={styles.menu_card}>
-        <div className={styles.menu_image}> </div>
-        <h3 className={styles.menu_subtitle}>Punto de atencion al cliente Envigado</h3>
-      </div>
+      <TitleWithIcon >VISITANOS</TitleWithIcon>
+      {
+        locationsView.map((location, index) => {
 
-      <div className={styles.menu_card}>
-        <div className={styles.menu_image}> </div>
-        <h3 className={styles.menu_subtitle}>Punto de atencion al cliente Santafe</h3>
-      </div>
+          return (
+            <div className={styles.locationItem} key={index}>
+              <img
+                src={location.img}
+                alt={location.title}
+              />
+              <h3 className={styles.locationSubTitle}>{location.title}</h3>
+              <p className={styles.locationText}>{location.text}</p>
+            </div>
+          );
+        })
+      }
     </section>
   );
 };
