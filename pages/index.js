@@ -5,9 +5,9 @@ import Updates from "./../viewLayer/Home/components/Updates/Updates";
 import Menu from "./../viewLayer/Home/components/Menu/Menu";
 import Reservation from "./../viewLayer/Home/components/Reservation/Reservation";
 import Locations from "./../viewLayer/Home/components/Locations/Locations";
+import Footer from "./../viewLayer/Home/components/Footer/Footer"
 
 import NavBar from "../viewLayer/Utils/NavBar/NavBar";
-
 import { motion } from "framer-motion";
 
 // Our custom easing
@@ -53,6 +53,7 @@ const Home = () => {
       <Menu />
       <Reservation />
       <Locations />
+      <Footer />
     </motion.div>
   );
 };

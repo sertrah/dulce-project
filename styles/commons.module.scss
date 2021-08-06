@@ -1,7 +1,7 @@
 .titleWithIcon {
-  color: var(--cafe);
+  color: var(--brown);
   text-align: center;
-  border: 1px solid var(--azulAcua);
+  border: 1px solid var(--blue);
   margin-left: 40px;
   margin-right: 40px;
   padding-right: 60px;
@@ -28,12 +28,12 @@
     height: 91%;
     left: 0;
     right: 0;
-    background: var(--amarillo);
+    background: var(--yellow);
     margin: auto;
     z-index: -1;
   }
   .titleWithIcon_logo {
-    color: var(--azulAcua);
+    color: var(--blue);
     width: 5.8rem;
     position: absolute;
     margin: auto;
@@ -42,7 +42,7 @@
     bottom: -2rem;
     z-index: 1;
     path {
-      stroke: var(--azulAcua);
+      stroke: var(--blue);
       stroke-width: 3.2px;
     }
   }
@@ -50,4 +50,5 @@
     margin: 1.2rem 0;
     width: 100%;
   }
+ 
 }

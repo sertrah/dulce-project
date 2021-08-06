@@ -12,27 +12,27 @@
   z-index: 2;
 
   &.nav_change {
-    background: #a3d6cf;
+    background: var(--blue);
     animation: nav--change-in 1s forwards;
     .nav_logo {
       path, rect, polygon{
-        fill: #ffffff;
+        fill: var(--white);
       }
     }
     .nav_shopping {
-      fill: #ffffff;
+      fill:var(--white);
     }
     .nav_btn {
-      fill: #ffffff;
+      fill: var(--white);
     }
   }
 
   .nav_btn {
     font-size: 4rem;
-    color: #af7c58;
+    color: var(--brown);
   }
   .nav_shopping {
-    color: #af7c58;
+    color: var(--brown);
     font-size: 3rem;
   }
 
@@ -56,7 +56,7 @@
 
 .navitem {
   text-align: center;
-  color: #af7c58;
+  color: var(--brown);
   position: relative;
   padding: 7rem 0rem;
   font-weight: 400;
@@ -94,11 +94,11 @@
   margin: 0px auto;
   svg {
     font-size: 2.4rem;
-    color: #af7c58;
+    color: var(--brown);
   }
 }
 .navRedes {
-  color: #af7c58;
+  color: 8;
   position: absolute;
   bottom: 0rem;
   left: 0;
@@ -115,7 +115,7 @@
     width: 95%;
     height: 0.1rem;
     margin: 0px auto;
-    background-color: #fff;
+    background-color:var(--white);
   }
   svg {
     font-size: 3rem;
