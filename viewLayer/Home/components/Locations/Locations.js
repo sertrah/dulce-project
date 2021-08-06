@@ -10,7 +10,7 @@ const locationsView = [
 const Locations = () => {
   return (
     <section className={styles.location}>
-      <TitleWithIcon >VISITANOS</TitleWithIcon>
+      <TitleWithIcon className={styles.locationTitle} >VISITANOS</TitleWithIcon>
       {
         locationsView.map((location, index) => {
 

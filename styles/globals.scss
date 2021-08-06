@@ -9,15 +9,12 @@
   --pink :#F4C2C2;
   --white :#FFF;
   --black :#000;
+  color-scheme: light;
 }
 body {
   background-color: var(--yellow-light) !important;
 }
 
-
-:root {
-  color-scheme: light;
-}
 html {
   font-size: 62.5%;
 }
