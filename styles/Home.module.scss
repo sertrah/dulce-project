@@ -206,43 +206,20 @@
 .carousel{
   overflow: hidden;
   .carousel_inner{
-    transition: all 0.8s ease-in-out;
     white-space: nowrap;
+    position: relative;
+    height: 60rem;
     .carousel_item{
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      position: relative;
+      position: absolute;
       height: 100%;
       width: 100%;
-      &:not(.active) {
-        transform: scale(0.9) translateX(20%);
-        z-index: 0;
-        transition: all 0.8s ;
-      }
       &.active{
         z-index: 1;
-        position: relative;
         transform: scale(1);
-        transition: all 0.8s ;
-        & + div{
-          transform: scale(0.9) translateX(-20%) !important;
-          z-index: 0;
-          transition: all 0.8s ;
-        }
       }
-
-
-    }
-    .carousel_first{
-      position: absolute;
-      left: -82%;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      width: 100%;
-      transform: scale(0.9);
-      transition: all 0.8s;
     }
   }
   
