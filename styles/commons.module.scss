@@ -52,3 +52,19 @@
   }
  
 }
+
+.cardCommon {
+  width: 100%;
+  background-color: #ccc;
+  background-image: url("/img/bgmovil.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  .cardCommonTitle {
+    color: var(--white);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 4em;
+  }
+}
