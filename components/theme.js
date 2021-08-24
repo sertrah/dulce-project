@@ -19,14 +19,14 @@ const theme = createTheme({
     },
   },
   typography: {
-    htmlFontSize: 10,
+    htmlFontSize: 9,
     h2: {
-      fontSize: 1,
+      fontSize: 24,
 
     },
     body1: {
       fontWeight: 500,
-      fontSize: 1,
+      fontSize: 18,
     },
     button: {
       textTransform: 'none'
