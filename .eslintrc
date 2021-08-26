@@ -1,5 +1,5 @@
 {
-  "extends": ["next", "next/core-web-vitals", "eslint:recommended", "plugin:react/recommended"],
+  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
   "rules": {
     "no-unused-vars": 0,
     "code": 400,

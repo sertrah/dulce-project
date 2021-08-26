@@ -1,19 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
+import style from "../../../styles/Menu.module.scss";
 
 const MenuOptions = ({ products }) => {
   return (
-    <div className="menuOption">
+    <div className={style.menuOption}>
       {products.map((product, index) => (
-        <div className="menuOptionContent" key={`menuOption-${product.name}-${index}`}>
-          <div>
+        <div className={style.menuOptionContent} key={`menuOption-${product.name}-${index}`}>
+          <div className={style.menuTitle}>
             <h4>{product.name}</h4>
             <h4>
               ${product.price}
               <span>{product.decimalPrice}</span>
             </h4>
           </div>
-          <p>{product.description}</p>
+          <p className={style.menuDescription}>{product.description}</p>
         </div>
       ))}
     </div>

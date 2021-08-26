@@ -1,0 +1,42 @@
+.tabs{
+    background-color: #F4C2C2;
+    .tabsHeader{
+        box-shadow: none;
+    }
+    .tabsItem{
+        svg{
+            width: 5rem;
+            height: 5rem;
+            background: var(--yellow-light);
+            padding: 1rem;
+            border-radius: 50%;
+        }
+        &::after{
+            content: attr(attr-color);
+        }
+    }
+    .tabPanel{
+        padding: 2rem;
+    }
+}
+
+.menuOption{
+    color: #fff;
+    .menuOptionContent{
+        margin-bottom: 2rem;
+    }
+    .menuTitle{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        h4 {
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+    }  
+    .menuDescription{
+        margin: 0;
+    } 
+}

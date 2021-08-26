@@ -32,6 +32,33 @@ const theme = createTheme({
       textTransform: 'none'
     }
   },
+  overrides: {
+    MuiTabs: {
+      root: {
+        borderBottom: '1px solid #e8e8e8',
+        backgroundColor: '#FFF9EE',
+      },
+      indicator: {
+        backgroundColor: '#F4C2C2',
+      },
+    },
+    MuiTab: {
+      root: {
+        textTransform: 'none',
+        minWidth: 72,
+        fontWeight: 500,
+        fontSize: 18, 
+        '&$selected': {
+          color: '#fff',
+          backgroundColor: '#F4C2C2',
+          fontWeight: 500,
+        },
+        '&:focus': {
+          color: '#fff',
+        },
+      },
+    },
+  },
 });
 
 export default theme;
