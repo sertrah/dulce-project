@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../../../../styles/Home.module.scss";
+import Leaf from "../Updates/Leaf";
+import CollapsebleOptions from "./CollapsableOptions";
 
 
 const Locations = () => {
@@ -7,18 +9,12 @@ const Locations = () => {
     <>
       <section className={styles.locations}>
 
-        <h2 className={styles.locations_title}> Conoce Nuestros Puntos de Atencion</h2>
-        <div className={styles.locationsOverlay}> </div>
+        <Leaf className={styles.locations_icon} />
+        <h2 className={styles.locations_title}> Visitanos</h2>
 
-        <div className={styles.locations_descriptions}>
-          <h3>Planta de Produccion</h3>
-          <p> Envigado </p>
+        <img className={styles.locations_image} src="/img/dulcesantafe.jpeg" alt="" />
 
-          <h3>Punto de Venta</h3>
-          <p> Cc Santa Fe </p>
-        </div>
-
-
+        <CollapsebleOptions />
 
 
 

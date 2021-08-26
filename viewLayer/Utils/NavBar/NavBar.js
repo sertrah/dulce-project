@@ -5,7 +5,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useScrollPosition } from "./useScrollPosition";
-
+import Avellanas from "../../../public/img/Avellanas.svg"
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
@@ -61,29 +61,29 @@ const NavBar = () => {
             }}
           />
           <div className={styles.nav_brand}>
-            <NavLogo className={styles.nav_logo} />
+          <NavLogo className={styles.nav_logo} />
+
           </div>
-          <ShoppingCartIcon className="nav_shopping" />
         </div>
         <ul className={styles.navitem}>
           <li>
             <Link className={styles.navitemLink} href="/" color="secondary">
-              HOME
+              Inicio
             </Link>
           </li>
           <li>
             <Link className={styles.navitemLink} href="/" color="secondary">
-              ABOUT US
+              Menu
             </Link>
           </li>
           <li>
             <Link className={styles.navitemLink} href="/" color="secondary">
-              MENU
+              Conoce nuestra historia
             </Link>
           </li>
           <li>
             <Link className={styles.navitemLink} href="/" color="secondary">
-              CONTACT US
+              Contactanos
             </Link>
           </li>
         </ul>
