@@ -22,13 +22,13 @@ const Updates = () => {
         </Button>
         <Button variant="contained" className={styles.roundButton}>
           <div>
-            <p>Eventos</p>
+            <p>UpDates</p>
             <Leaf />
           </div>
         </Button>
         <Button variant="contained" className={styles.roundButton}>
           <div>
-            <p>Eventos</p>
+            <p>Conocenos</p>
             <Leaf />
           </div>
         </Button>

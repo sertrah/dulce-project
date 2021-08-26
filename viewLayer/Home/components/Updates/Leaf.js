@@ -4,6 +4,7 @@ const Leaf = ({ ...props }) => (
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 66.79 39.81"
+    {...props}
   >
     <defs>
       <style>{`.cls-1{fill:#623d2d;}`}</style>
