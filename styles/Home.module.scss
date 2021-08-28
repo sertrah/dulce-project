@@ -255,3 +255,20 @@
     }
   }
 }
+
+.slider{
+  display: inline-flex;
+  flex-flow: nowrap;
+  white-space: nowrap;
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  .sliderItem {
+    transform: translateX(-50%);
+    width: 300px;
+    position: absolute;
+    /* top: 50%; */
+    right: 50%;
+    left: 50%;
+  }
+}
