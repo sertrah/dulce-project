@@ -10,6 +10,8 @@ const AccordionDetails = withStyles({
   root: {
     display: "block",
     textAlign: "left",
+    color: "var(--brown)",
+
   },
 })(MuiAccordionDetails);
 
@@ -71,22 +73,23 @@ export default function SimpleAccordion() {
     <div style={{ padding: "0 15px" }}>
       <Accordion>
         <AccordionSummary expandIcon={<ChevronRightIcon />} aria-controls="panel1a-content" id="panel1a-header">
-          <h3 className={styles.collapsableTitle}>Planta de produccion</h3>
+          <h3 className={styles.collapsableTitle}>Punto de Venta</h3>
         </AccordionSummary>
         <AccordionDetails>
-          <p>Transversal 31 S 32 B-25, Envigado</p>
-          <p>Lun - Vier: 10:00am a 6:00pm</p>
-          <p>tel. 3234565610</p>
+          <p>Centro Comercial Santafe</p>
+          <p>Carrera 43a, Calle 7 Sur - 170 Medellín</p>
+          <p>Lun - Dom: 9:00am a 8:00pm</p>
         </AccordionDetails>
       </Accordion>
 
       <Accordion>
         <AccordionSummary expandIcon={<ChevronRightIcon />} aria-controls="panel2a-content" id="panel2a-header">
-          <h3>Punto de Venta</h3>
+          <h3>Planta de Produccion</h3>
         </AccordionSummary>
         <AccordionDetails>
-          <p>CC Santafe medellin</p>
-          <p>Lun - Dom: 9:00am a 8:00pm</p>
+          <p>Transversal 31 S 32 B-25, Envigado</p>
+          <p>Lun - Vier: 10:00am a 6:00pm</p>
+          <p>tel. 3234565610</p>
         </AccordionDetails>
       </Accordion>
     </div>

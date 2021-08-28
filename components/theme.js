@@ -28,6 +28,9 @@ const theme = createTheme({
       fontWeight: 500,
       fontSize: 18,
     },
+    a: {
+      color: "#fff",
+    },
     button: {
       textTransform: 'none'
     }
@@ -41,6 +44,11 @@ const theme = createTheme({
       indicator: {
         backgroundColor: '#F4C2C2',
       },
+    },
+    MuiLink: {
+      root: {
+        color: "var(--brown)",
+      }
     },
     MuiTab: {
       root: {

@@ -53,36 +53,36 @@ const NavBar = () => {
         open={isOpenSideMenu}
         onClose={handleDrawerToggle}
       >
-        <div className={styles.nav_mobile}>
+        <div className={styles.fullnav}>
           <MenuOpenIcon
-            className="nav_btn"
-            onClick={() => {
+          className={styles.fullnav_btn}
+          onClick={() => {
               setIsOpenSideMenu(false);
             }}
           />
           <div className={styles.nav_brand}>
-          <NavLogo className={styles.nav_logo} />
+          <Avellanas className={styles.fullnav_logo} />
 
           </div>
         </div>
         <ul className={styles.navitem}>
           <li>
-            <Link className={styles.navitemLink} href="/" color="secondary">
+            <Link className={styles.navitemLink} href="/" >
               Inicio
             </Link>
           </li>
           <li>
-            <Link className={styles.navitemLink} href="/" color="secondary">
+            <Link className={styles.navitemLink} href="/" >
               Menu
             </Link>
           </li>
           <li>
-            <Link className={styles.navitemLink} href="/" color="secondary">
+            <Link className={styles.navitemLink} href="/">
               Conoce nuestra historia
             </Link>
           </li>
           <li>
-            <Link className={styles.navitemLink} href="/" color="secondary">
+            <Link className={styles.navitemLink} href="/" >
               Contactanos
             </Link>
           </li>
