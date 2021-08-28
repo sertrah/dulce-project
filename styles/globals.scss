@@ -1,14 +1,13 @@
-
 :root {
-  --brown: #AF7C58;
-  --yellow:#FBF3C8;
-  --yellow-light: #FFF9EE;
-  --silver: #E5E5E5;
-  --blue:#B8DCD7;
-  --green:#9B9578;
-  --pink :#F4C2C2;
-  --white :#FFF;
-  --black :#000;
+  --brown: #af7c58;
+  --yellow: #fbf3c8;
+  --yellow-light: #fff9ee;
+  --silver: #e5e5e5;
+  --blue: #b8dcd7;
+  --green: #9b9578;
+  --pink: #f4c2c2;
+  --white: #fff;
+  --black: #000;
   color-scheme: light;
 }
 body {
@@ -19,8 +18,9 @@ html {
   font-size: 62.5%;
 }
 
-h1, h2 {
-  font-family: 'Roboto Slab', serif;
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
   font-weight: 300;
   margin: 0;
 }
@@ -30,17 +30,29 @@ h1 {
   font-weight: 600;
 }
 
-
 h2 {
   font-size: 3.2rem;
-
 }
 
-
-div.MuiPaper-root.MuiDrawer-paper{
-  background-color: #B3D6D1;
+div.MuiPaper-root.MuiDrawer-paper {
+  background-color: #b3d6d1;
   width: 100vw;
   position: relative;
 }
 
-
+.slider-item {
+  white-space: nowrap;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 60rem;
+}
+.slider-item-image {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  image {
+    width: 100%;
+  }
+}

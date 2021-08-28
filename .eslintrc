@@ -2,10 +2,10 @@
   "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
   "rules": {
     "no-unused-vars": 0,
-    "code": 400,
+    "code": 200,
     "tabWidth": 2,
     "ignoreUrls": true,
-    "max-len": [200, 400, 4, { "ignoreUrls": true }],
+    "max-len": [100, 100, 4, { "ignoreUrls": true }],
     "prettier/prettier": "warn"
   }
 }

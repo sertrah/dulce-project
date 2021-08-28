@@ -4,7 +4,7 @@ import styles from "../../styles/commons.module.scss";
 const CardCommon = ({ image, title }) => {
   return (
     <>
-      <section className={styles.cardCommon}>
+      <section className={styles.cardCommon} style={{backgroundImage: `url("${image}")`}}>
         <h1 className={styles.cardCommonTitle}>{title}</h1>
       </section>
     </>

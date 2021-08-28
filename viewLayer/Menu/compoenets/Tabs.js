@@ -48,8 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function MenuTabs({ menuDetails }) {
-  const [activeNumberTab, setActiveNumberTab] = React.useState(0);
+function MenuTabs({ menuDetails, activeNumberTab, setActiveNumberTab }) {
 
   const handleChange = (event, newValue) => {
     setActiveNumberTab(newValue);
