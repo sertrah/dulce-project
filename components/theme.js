@@ -50,6 +50,7 @@ const theme = createTheme({
         color: "var(--brown)",
       }
     },
+  
     MuiTab: {
       root: {
         textTransform: 'none',
