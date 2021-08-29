@@ -80,7 +80,7 @@ const Menu = () => {
     // CODIGO A EJECUTAR CUANDO SE EJECUTE EL EFFECT
     // Cuando sea el primer ejecuto el código
     // Cuando se cambie el estado del componente
-     const intervalId = setInterval(() => {
+     /* const intervalId = setInterval(() => {
       setPosition((prev) => {
         const current = prev - 1;
         const getPosition = (current % width);
@@ -95,7 +95,7 @@ const Menu = () => {
       if (intervalId) {
         clearInterval(intervalId);
       }
-    }; 
+    };  */
   }, []);
 
   const animateCards = () => { 

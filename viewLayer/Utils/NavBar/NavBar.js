@@ -72,13 +72,8 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link className={styles.navitemLink} href="/" >
+            <Link className={styles.navitemLink} href="/menu" >
               Menu
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.navitemLink} href="/">
-              Conoce nuestra historia
             </Link>
           </li>
           <li>
