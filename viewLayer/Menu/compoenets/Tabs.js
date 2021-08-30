@@ -15,7 +15,6 @@ function TabPanel(props) {
     <div
       role="tabpanel"
       hidden={value !== index}
-      style={{ backgroundColor: value === index && color }}
       id={`scrollable-auto-tabpanel-${index}`}
       aria-labelledby={`scrollable-auto-tab-${index}`}
       className={styles.tabPanel}
@@ -70,8 +69,6 @@ function MenuTabs({ menuDetails, activeNumberTab, setActiveNumberTab }) {
             <Tab
               key={`menuTabs-${index}`}
               label={option}
-              icon={<Hoja />}
-              style={{ backgroundColor: activeNumberTab === index && menuDetails.colors[index] }}
               className={styles.tabsItem}
               {...a11yProps(index)}
             />
