@@ -73,7 +73,7 @@
 
 .locations {
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
   background-color: var(--yellow-light);
   border: 1px solid var(--blue);
   position: relative;
@@ -99,7 +99,7 @@
     right: 0;
     margin: auto;
     background-color: var(--yellow);
-    height: 98.5%;
+    height: 97.5%;
     top: 5px;
     z-index: 0;
   }
@@ -151,6 +151,57 @@
   }
 }
 
+.footer {
+  display: block;
+  text-align: center;
+  background-color:var(--blue);
+  color: var(--white);
+padding: 15px 0;
+  .footer_logo{
+    width: 70px;
+    path {
+    stroke: var(--yellow);
+ stroke-width: 3.2px;
+    }
+  }
+  .footer_info{
+    display: block;
+    text-align: center;
+   font-size: 19px;
+   font-weight: 600;
+  }
+  .footer_icons {
+    position: relative;
+    color: var(--yellow);
+  
+    &::before {
+      content: "";
+      font-size: 3.6rem;
+      position: absolute;
+      top: -0.9rem;
+      left: 0;
+      right: 0;
+      width: 95%;
+      height: 0.1rem;
+      margin: 0px auto;
+      background-color: var(--white);
+    }
+  }
+  .footer_copyright{
+    margin: 0;
+    color: var(--white);
+  }
+  .footer_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg { 
+      margin-right: 10px;
+      color : var(--yellow);
+
+    }
+  }
+}
 
 
 .updates {
