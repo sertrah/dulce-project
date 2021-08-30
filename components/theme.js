@@ -22,8 +22,9 @@ const theme = createTheme({
     htmlFontSize: 9,
     h2: {
       fontSize: 24,
-
     },
+    h4: { fontSize: 18 },
+    h5: { fontSize: 16 },
     body1: {
       fontWeight: 500,
       fontSize: 18,
@@ -39,10 +40,10 @@ const theme = createTheme({
     MuiTabs: {
       root: {
         borderBottom: '1px solid #e8e8e8',
-        backgroundColor: '#FFF9EE',
+        backgroundColor: 'var(--white)',
       },
       indicator: {
-        backgroundColor: '#F4C2C2',
+        backgroundColor: 'var(--brown)',
       },
     },
     MuiLink: {
@@ -57,14 +58,17 @@ const theme = createTheme({
         fontWeight: 500,
         fontSize: 18, 
         '&$selected': {
-          color: '#fff',
-          backgroundColor: '#F4C2C2',
+          color: "var(--brown)",
           fontWeight: 500,
         },
         '&:focus': {
-          color: '#fff',
+          color: "var(--brown)",
+          fontWeight: 500,
         },
       },
+      textColorInherit: {
+        color: "var(--brown)",
+      }
     },
   },
 });

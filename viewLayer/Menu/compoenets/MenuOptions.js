@@ -9,12 +9,17 @@ const MenuOptions = ({ products }) => {
         <div className={style.menuOptionContent} key={`menuOption-${product.name}-${index}`}>
           <div className={style.menuTitle}>
             <h4>{product.name}</h4>
+
+            <p className={style.menuDescription}>{product.description}</p>
             <h4>
               ${product.price}
               <span>{product.decimalPrice}</span>
             </h4>
           </div>
-          <p className={style.menuDescription}>{product.description}</p>
+          <img
+            src="https://www.superama.com.mx/views/micrositio/recetas/images/masbuscadas/omelette/Web_fotoreceta.jpg"
+            alt="{product.name}"
+          />
         </div>
       ))}
     </div>
