@@ -1,29 +1,33 @@
 import styles from "../../../../styles/Home.module.scss";
-import logoCompleto from "../../../../public/img/logoCompleto.svg";
+import Avellanas from "../../../../public/img/Avellanas.svg";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import StorefrontIcon from '@material-ui/icons/Storefront';
+import PhoneIcon from '@material-ui/icons/Phone';
 
 
 const Footer = () => {
   return (
     <>
       <section className={styles.footer}>
-      <logoCompleto />    
 
-        <div className={styles.footer_info}>    
+        <Avellanas className={styles.footer_logo} />
+        <div className={styles.footer_info}>
+          <p className={styles.footer_text}> <StorefrontIcon className={styles.footer_icon} /> Visitanos</p>
+          <p className={styles.footer_text}> <PhoneIcon className={styles.footer_icon} /> (4)3318330</p>
+          <p className={styles.footer_text}> <WhatsAppIcon className={styles.footer_icon} /> 3148857900</p>
+          <p className={styles.footer_text}> <MailOutlineIcon className={styles.footer_icon} /> dulce-avellana@hotmail.com</p>
 
-        <h2>dulce</h2>
-        <h3>3234565610</h3>
-        <h3>dulce-avellana@hotmail.com</h3>
+        </div>
 
-        <div className={styles.footer_icon}>
+        <div className={styles.footer_icons}>
           <FacebookIcon />
           <InstagramIcon />
-          <WhatsAppIcon />
-          <p>Copyright © 2021 Dulce Avellana </p>
+          <p className={styles.footer_copyright}>Copyright © 2021 Dulce Avellana </p>
         </div>
-        </div>
+
       </section>
 
     </>
