@@ -21,7 +21,6 @@ const Card = ({ title }) => {
 const CardMemorized = memo(Card);
 
 const FlatSlider = ({ data }) => {
-  const [active, setActive] = React.useState(0);
   const box1 = useRef(null);
   const slideDuration = 1;
   const cardItems = useMemo(
@@ -48,24 +47,24 @@ const FlatSlider = ({ data }) => {
   const box3 = useRef(null);
   const [datt, setDatt] = React.useState(cardItems);
   React.useEffect(() => {
-    setInterval(() => {
-      setDatt((prev) => [...prev.slice(1), prev[0]]);
-      gsap.to(box1.current, {
-        xPercent: "-130",
-        duration: slideDuration,
-        startAt: { xPercent: "-40" },
-      });
-      gsap.to(box2.current, {
-        xPercent: "-40",
-        duration: slideDuration,
-        startAt: { xPercent: "50" },
-      });
-      gsap.to(box3.current, {
-        xPercent: "50",
-        duration: slideDuration,
-        startAt: { xPercent: "90" },
-      });
-    }, 5500);
+    gsap.to(box1.current, {
+      xPercent: "-155",
+      duration: slideDuration,
+      scale: 0.95,
+      startAt: { xPercent: "-50", scale: 1 },
+    });
+    gsap.to(box2.current, {
+      xPercent: "-50",
+      scale: 1,
+      duration: slideDuration,
+      startAt: { xPercent: "55", scale: 0.95},
+    });
+    gsap.to(box3.current, {
+      xPercent: "55",
+      duration: slideDuration,
+      scale: 0.95,
+      startAt: { xPercent: "90", scale: 0.95},
+    });
   }, [data]);
 
   const setRef = (position) => (ref) => {

@@ -70,8 +70,8 @@ const Home = () => {
       <NavBar />
       <CoverPage />
       <Updates />
-      <CompPrueba data={data} />
       <Menu />
+      <CompPrueba data={data} />
       <AboutUs />
       <Locations />
       <Footer />
