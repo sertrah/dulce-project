@@ -29,13 +29,17 @@
       fill: var(--white);
     }
   }
+  &.nav_bgSolid{
+    background: var(--blue);
+    color : var(--white)
+  }
 
   .nav_btn {
     font-size: 4rem;
-    color: var(--yellow-light);
+    color: var(--brown);
   }
   .nav_shopping {
-    color: var(--yellow-light);
+    color: var(--brown);
     font-size: 3rem;
   }
 

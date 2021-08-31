@@ -39,7 +39,7 @@ const theme = createTheme({
   overrides: {
     MuiTabs: {
       root: {
-        borderBottom: '1px solid #e8e8e8',
+        borderBottom: '1px solid var(--brown)',
         backgroundColor: 'var(--white)',
       },
       indicator: {

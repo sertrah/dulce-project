@@ -5,7 +5,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useScrollPosition } from "./useScrollPosition";
-import Avellanas from "../../../public/img/Avellanas.svg"
+import Avellanas from "../../../public/img/Avellanas.svg";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
@@ -17,7 +17,7 @@ import Link from "./../Link";
 
 // Toda funcion que empieze con su primera letra en mayus
 // es por que es un Componente de React === Componente funcional
-const NavBar = () => {
+const NavBar = ({solidbg}) => {
   const [changeOnScroll, setChangeOnScroll] = useState(false);
   const [isOpenSideMenu, setIsOpenSideMenu] = useState(false);
 
@@ -35,7 +35,7 @@ const NavBar = () => {
   return (
     <>
       <nav
-        className={`${styles.nav} ${changeOnScroll ? styles.nav_change : ""}`}
+        className={`${styles.nav} ${changeOnScroll || solidbg ? styles.nav_change : ""}`}
       >
         <MenuIcon
           className={styles.nav_btn}

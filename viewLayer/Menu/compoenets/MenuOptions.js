@@ -17,8 +17,8 @@ const MenuOptions = ({ products }) => {
             </h4>
           </div>
           <img
-            src="https://www.superama.com.mx/views/micrositio/recetas/images/masbuscadas/omelette/Web_fotoreceta.jpg"
-            alt="{product.name}"
+            src={product?.img}
+            alt={product?.img}
           />
         </div>
       ))}

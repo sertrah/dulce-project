@@ -23,15 +23,15 @@
 .menuOption{
     color: var(--brown);
     .menuOptionContent{
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         display: inline-flex;
         width: 100%;
         justify-content: space-between;
-        border-bottom:  1px solid var(--gray);
+        border-bottom:  1px solid var(--brown);
         padding-bottom:1.8rem;
         img{
-            width: 130px;
-            height: auto;
+            width: 150px;
+            height: 140px;
             border-radius: 20px;
         }
     }
@@ -45,7 +45,7 @@
             margin-top: 0.3em;
         }
         p {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             color: var(--black);
         }
     }  
