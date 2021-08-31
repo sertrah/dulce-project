@@ -65,6 +65,27 @@ const FlatSlider = ({ data }) => {
       scale: 0.95,
       startAt: { xPercent: "90", scale: 0.95},
     });
+    setInterval(() => {
+      setDatt((prev) => [...prev.slice(1), prev[0]]);
+      gsap.to(box1.current, {
+        xPercent: "-155",
+        duration: slideDuration,
+        scale: 0.95,
+        startAt: { xPercent: "-50", scale: 1 },
+      });
+      gsap.to(box2.current, {
+        xPercent: "-50",
+        scale: 1,
+        duration: slideDuration,
+        startAt: { xPercent: "55", scale: 0.95},
+      });
+      gsap.to(box3.current, {
+        xPercent: "55",
+        duration: slideDuration,
+        scale: 0.95,
+        startAt: { xPercent: "90", scale: 0.95},
+      });
+    }, 4000);
   }, [data]);
 
   const setRef = (position) => (ref) => {
