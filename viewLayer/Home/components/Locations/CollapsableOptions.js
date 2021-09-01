@@ -10,7 +10,7 @@ const AccordionDetails = withStyles({
   root: {
     display: "block",
     textAlign: "left",
-    color: "var(--brown)",
+    color: "var(--darkCoffe)",
 
   },
 })(MuiAccordionDetails);
@@ -49,7 +49,7 @@ const AccordionSummary = withStyles({
       "& h3": {
         margin: 0,
         marginLeft: 12,
-        color: "var(--brown)",
+        color: "var(--darkCoffe)",
         fontWeight: "100",
       },
     },
@@ -59,7 +59,7 @@ const AccordionSummary = withStyles({
   },
   expandIcon: {
     transform: "translateX(-5px)",
-    color: "var(--brown)",
+    color: "var(--darkCoffe)",
     padding: 0,
     "&$expanded": {
       transform: "rotate(90deg) translate(0px, 5px)",
