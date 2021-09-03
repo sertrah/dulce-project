@@ -16,10 +16,16 @@ const MenuOptions = ({ products }) => {
               <span>{product.decimalPrice}</span>
             </h4>
           </div>
-          <img
-            src={product?.img}
-            alt={product?.img}
-          />
+          <div
+            style={{
+              backgroundImage: `url(${product?.img})`,
+              width: " 150px",
+              height: "100px",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
+          >
+          </div>
         </div>
       ))}
     </div>
