@@ -1,7 +1,6 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-top: 10px;
   padding: 0px 1rem;
   position: fixed;
@@ -36,7 +35,7 @@
 
   .nav_btn {
     font-size: 4rem;
-    color: var(--brown);
+    color: var(--darkCoffe);
   }
   .nav_shopping {
     color: var(--brown);
@@ -44,6 +43,7 @@
   }
 
   &_logo {
+    margin-left: 55px;
     width: 22rem;
     display: block;
     padding: 18px;

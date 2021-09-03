@@ -3,7 +3,6 @@ import styles from "../../../styles/navBar.module.scss";
 
 import MenuIcon from "@material-ui/icons/Menu";
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useScrollPosition } from "./useScrollPosition";
 import Avellanas from "../../../public/img/Avellanas.svg";
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -46,7 +45,6 @@ const NavBar = ({solidbg}) => {
         <div className={styles.nav_brand}>
           <NavLogo className={styles.nav_logo} />
         </div>
-        <ShoppingCartIcon className={styles.nav_shopping} />
       </nav>
       <Drawer
         anchor={"left"}
