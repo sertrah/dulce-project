@@ -53,10 +53,25 @@
 
 .modal{
     width: 30rem;
-    height:35rem;
+    height:40rem;
     text-align: center;
+    color: #AF7C58;
     .modalImg{
         padding: 15px;
-        height:45%;
+        height: auto;
+        width: 70%;
+        border-radius: 26px;
+    }
+    .modalTitle{
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .modalDescription{
+        color: #000;
+    }
+    .modalPricce{
+        font-size: 2rem;
+        font-weight: bold;
     }
 }
