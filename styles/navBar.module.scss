@@ -26,14 +26,12 @@
       path,
       rect,
       polygon {
-        stroke: var(--white);
+        stroke: var(--yellow);
 
         stroke-width: 3.2px;
       }
     }
-    .nav_shopping {
-      fill: var(--white);
-    }
+
     .nav_btn {
       fill: var(--white);
     }
@@ -50,7 +48,7 @@
 
   &_logo {
     margin-left: 55px;
-    width: 20rem;
+    width: 21rem;
     display: block;
     padding: 13px 7px;
     position: absolute;
@@ -61,7 +59,7 @@
     path,
     rect,
     polygon {
-      fill: var(--white) !important;
+      fill: var(--white);
     }
   }
 }

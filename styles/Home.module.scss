@@ -159,7 +159,7 @@
 .updates {
   display: flex;
   justify-content: space-around;
-  padding: 4rem 0rem;
+  padding: 6rem 0rem;
   position: relative;
   overflow: hidden;
   .roundButton {
@@ -181,7 +181,7 @@
         margin: 0;
       }
       svg {
-        width: 1.8rem;
+        width: 2.6rem;
         position: absolute;
         left: 0;
         right: 0;
@@ -220,7 +220,7 @@
     svg {
       width: 20rem;
       &:nth-child(2) {
-        margin-top: 2rem;
+        margin-top: 6rem;
         transform: scaleY(-1);
       }
     }
@@ -243,7 +243,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    background: linear-gradient(#9776767b, #ffffff7b);
+    background: linear-gradient(#97767673, #ffffff7b);
   }
 }
 

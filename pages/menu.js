@@ -9,6 +9,7 @@ import Card from "../viewLayer/Utils/Card";
 import MenuTabs from "../viewLayer/Menu/compoenets/Tabs";
 import { menuDetails } from "../constants/menu";
 
+
 export default function Home() {
   const [activeNumberTab, setActiveNumberTab] = React.useState(0);
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import style from "../../../styles/Menu.module.scss";
 
-const MenuOptions = ({ products }) => {
+const MenuOptions = ({ products, onOpenDialog }) => {
   return (
     <div className={style.menuOption}>
       {products.map((product, index) => (
@@ -20,10 +20,12 @@ const MenuOptions = ({ products }) => {
             style={{
               backgroundImage: `url(${product?.img})`,
               width: " 150px",
-              height: "100px",
+              height: "120px",
+              borderRadius: "6%",
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
+            onClick={onOpenDialog}
           >
           </div>
         </div>

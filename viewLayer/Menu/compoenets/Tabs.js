@@ -7,6 +7,7 @@ import Tab from "@material-ui/core/Tab";
 import MenuOptions from "./MenuOptions";
 import Hoja from "../../../public/img/Hoja.svg";
 import styles from "../../../styles/Menu.module.scss";
+import MenuDialog from "./MenuManners";
 
 function TabPanel(props) {
   const { children, value, index, color, ...other } = props;
@@ -38,19 +39,20 @@ function a11yProps(index) {
   };
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    width: "100%",
-    backgroundColor: theme.palette.background.paper,
-  },
-}));
-
 function MenuTabs({ menuDetails, activeNumberTab, setActiveNumberTab }) {
+  const [open, setOpen] = React.useState(false);
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+  };
   const handleChange = (event, newValue) => {
     setActiveNumberTab(newValue);
   };
+
 
   return (
     <div className={styles.tabs}>
@@ -77,9 +79,12 @@ function MenuTabs({ menuDetails, activeNumberTab, setActiveNumberTab }) {
       {/*  ACA se muestra lo que se selecciona en cada pesta;a */}
       {menuDetails.products.map((option, index) => (
         <TabPanel key={`menuOptions-${index}`} value={activeNumberTab} index={index} color={menuDetails.colors[index]}>
-          <MenuOptions products={option} />
+          <MenuOptions products={option} onOpenDialog={handleClickOpen} />
         </TabPanel>
       ))}
+
+      <MenuDialog title="title" image="imagen" description="descripcion" price="1000" onClose={handleClose} open={open} />
+
     </div>
   );
 }
