@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding-top: 10px;
-  padding: 4px 1rem;
+  padding: 7px 1rem;
   position: fixed;
   left: 0;
   right: 0;
@@ -21,12 +21,12 @@
       position: absolute;
       left: 0;
       right: 0;
-      top: 2px;
+      top: 7px;
       margin: auto;
       path,
       rect,
       polygon {
-        stroke: var(--white) !important;
+        stroke: var(--white);
 
         stroke-width: 3.2px;
       }
@@ -52,7 +52,7 @@
     margin-left: 55px;
     width: 20rem;
     display: block;
-    padding: 10px 7px;
+    padding: 13px 7px;
     position: absolute;
     left: 0;
     right: 0;
@@ -99,22 +99,24 @@
   justify-content: space-between;
   .fullnav_btn {
     font-size: 4rem;
-    color: var(--brown);
+    color: var(--yellow);
   }
   .fullnav_logo {
     width: 10rem;
     display: block;
     padding: 18px;
+    path {
+      stroke: var(--yellow);
+      stroke-width: 3.2px;
+    }
   }
 }
 
 .navitem {
-  text-align: center;
-  color: var(--brown);
-  position: relative;
-  padding: 7rem 0rem;
+  padding: 7rem 5rem;
   font-weight: 400;
-  overflow: hidden;
+  font-family: "roboto slab";
+  
   li {
     list-style: none;
     margin: 4rem 0rem;
@@ -122,29 +124,23 @@
     transform: translateX(-80%);
     animation-duration: 0.5s;
     animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    .navitemPoint {
+      background-color: var(--yellow);
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      margin-right: 6px;
+      display: inline-block;
+    }
     &:nth-child(2) {
       animation-delay: 0.5s;
     }
     &:nth-child(3) {
       animation-delay: 1s;
     }
+    
   }
-  &::before {
-    content: "........";
-    position: absolute;
-    font-size: 3.6rem;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  &::after {
-    content: "........";
-    position: absolute;
-    font-size: 3.6rem;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+
   &Link {
     font-weight: 400;
     font-size: 3.2rem;
@@ -185,10 +181,10 @@
   svg {
     font-size: 3rem;
     margin: 0px 1rem;
-    color: var(--brown);
+    color: var(--yellow);
   }
   p {
     margin-bottom: 1rem;
-    color: var(--brown);
+    color: var(--white);
   }
 }

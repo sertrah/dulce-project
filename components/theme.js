@@ -5,7 +5,7 @@ import { red } from "@material-ui/core/colors";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#99E6D8",
+      main: "#fff",
       contrastText: "#fff",
     },
     secondary: {
@@ -48,7 +48,7 @@ const theme = createTheme({
     },
     MuiLink: {
       root: {
-        color: "var(--brown)",
+        color: "var(-white)",
       }
     },
   

@@ -59,17 +59,17 @@ const NavBar = ({ solidbg }) => {
         <ul className={styles.navitem}>
           <li>
             <Link className={styles.navitemLink} href="/">
-              Inicio
+              <span className={styles.navitemPoint}> </span>Inicio
             </Link>
           </li>
           <li>
             <Link className={styles.navitemLink} href="/menu">
-              Menu
+            <span className={styles.navitemPoint}> </span>Menu
             </Link>
           </li>
           <li>
             <Link className={styles.navitemLink} href="/">
-              Contactanos
+            <span className={styles.navitemPoint}> </span>Contactanos
             </Link>
           </li>
         </ul>
