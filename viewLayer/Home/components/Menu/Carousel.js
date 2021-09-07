@@ -55,14 +55,14 @@ class Carousel extends React.Component {
 class CarouselItem extends React.Component {
   render() {
     return (
-      <div className={classnames(styles.carousel_item, this.props.current ? styles.current : "")}>
+      <div className={classnames(styles.carousel_item, this.props.current ? styles.current : "")}  role="presentation">
         <div className={styles.menu_card}>
-          <div className={styles.menu_image} role="presentation">
+          <div className={styles.menu_image} style={{backgroundImage: `url(${this.props.image})`}}>
             {" "}
           </div>
           <h2 className={styles.menu_title}>
             <span className={styles.menu_title_subtitle}>{this.props.title} </span>
-            {this.props.title}
+            {this.props.caption}
           </h2>
           <Button size="large" variant="contained" className={styles.menu_btn}>
             probar

@@ -16,7 +16,7 @@ import Link from "./../Link";
 
 // Toda funcion que empieze con su primera letra en mayus
 // es por que es un Componente de React === Componente funcional
-const NavBar = ({solidbg}) => {
+const NavBar = ({ solidbg }) => {
   const [changeOnScroll, setChangeOnScroll] = useState(false);
   const [isOpenSideMenu, setIsOpenSideMenu] = useState(false);
 
@@ -33,9 +33,7 @@ const NavBar = ({solidbg}) => {
 
   return (
     <>
-      <nav
-        className={`${styles.nav} ${changeOnScroll || solidbg ? styles.nav_change : ""}`}
-      >
+      <nav className={`${styles.nav} ${changeOnScroll || solidbg ? styles.nav_change : ""}`}>
         <MenuIcon
           className={styles.nav_btn}
           onClick={() => {
@@ -43,39 +41,34 @@ const NavBar = ({solidbg}) => {
           }}
         />
         <div className={styles.nav_brand}>
-          <NavLogo className={styles.nav_logo} />
+          {changeOnScroll ? <Avellanas className={styles.nav_logo2} /> : <NavLogo className={styles.nav_logo} />}
         </div>
       </nav>
-      <Drawer
-        anchor={"left"}
-        open={isOpenSideMenu}
-        onClose={handleDrawerToggle}
-      >
+      <Drawer anchor={"left"} open={isOpenSideMenu} onClose={handleDrawerToggle}>
         <div className={styles.fullnav}>
           <MenuOpenIcon
-          className={styles.fullnav_btn}
-          onClick={() => {
+            className={styles.fullnav_btn}
+            onClick={() => {
               setIsOpenSideMenu(false);
             }}
           />
           <div className={styles.nav_brand}>
-          <Avellanas className={styles.fullnav_logo} />
-
+            <Avellanas className={styles.fullnav_logo} />
           </div>
         </div>
         <ul className={styles.navitem}>
           <li>
-            <Link className={styles.navitemLink} href="/" >
+            <Link className={styles.navitemLink} href="/">
               Inicio
             </Link>
           </li>
           <li>
-            <Link className={styles.navitemLink} href="/menu" >
+            <Link className={styles.navitemLink} href="/menu">
               Menu
             </Link>
           </li>
           <li>
-            <Link className={styles.navitemLink} href="/" >
+            <Link className={styles.navitemLink} href="/">
               Contactanos
             </Link>
           </li>

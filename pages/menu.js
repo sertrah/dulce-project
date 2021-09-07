@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import { motion } from "framer-motion";
 
+import Footer from "../viewLayer/Utils/Footer/Footer";
 import NavBar from "../viewLayer/Utils/NavBar/NavBar";
 import Card from "../viewLayer/Utils/Card";
 import MenuTabs from "../viewLayer/Menu/compoenets/Tabs";
@@ -18,6 +19,7 @@ export default function Home() {
       <NavBar solidbg />
       <Card title="Menu" image={menuDetails.bgImages[activeNumberTab]} />
       <MenuTabs menuDetails={menuDetails} activeNumberTab={activeNumberTab} setActiveNumberTab={setActiveNumberTab} />
+      <Footer />
     </motion.div>
   );
 }

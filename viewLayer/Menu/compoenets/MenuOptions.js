@@ -37,7 +37,6 @@ MenuOptions.propTypes = {
       name: PropTypes.string.isRequired,
       price: PropTypes.string.isRequired,
       decimalPrice: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

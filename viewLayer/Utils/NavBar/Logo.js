@@ -7,7 +7,7 @@
     {...props}
   >
     <defs>
-      <style>{`.cls-1{fill:#af7c58;}`}</style>
+      <style>{`.cls-1{fill:#fff;}`}</style>
     </defs>
     <path
       className="cls-1"
