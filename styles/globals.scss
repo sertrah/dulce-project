@@ -4,12 +4,13 @@
   --yellow-light: #fff9ee;
   --silver: #e5e5e5;
   --blue: #b8dcd7;
+  --blue-secondary: #5bbfb1;
   --green: #9b9578;
   --pink: #f4c2c2;
   --white: #fff;
   --black: #4E4E4E;
   --gray: #C4C4C4;
-  --darkCoffe: #804f3a;
+  --darkCoffe: #96573c;
 }
 body {
   background-color: var(--yellow-light) !important;
@@ -42,7 +43,7 @@ div.MuiPaper-root.MuiDrawer-paper {
 }
 
 .MuiPaper-root.MuiDialog-paper{
-  border-radius: 26px;
+  border-radius: 15px;
 }
 .slider-item {
   white-space: nowrap;

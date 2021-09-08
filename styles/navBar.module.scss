@@ -1,5 +1,5 @@
 .nav {
-  display: flex;
+  display: flex; 
   align-items: center;
   padding-top: 10px;
   padding: 7px 1rem;
@@ -10,7 +10,7 @@
   transform: translateY(0);
   z-index: 2;
   background-image: "url(../img/fondo.png)";
-  color: var(--brown);
+  color: var(--yellow-light);
   background: var(--blue);
   animation: nav--change-out 1s forwards;
   z-index: 10;
@@ -26,29 +26,29 @@
       path,
       rect,
       polygon {
-        stroke: var(--brown);
+        stroke: var(--yellow);
 
         stroke-width: 3.2px;
       }
     }
 
     .nav_btn {
-      fill: var(--brown);
+      fill: var(--white);
     }
   }
   &.nav_bgSolid {
     background: var(--blue);
-    color: var(--brown);
+    color: var(--white);
   }
 
   .nav_btn {
     font-size: 3.5rem;
-    color: var(--brown);
+    color: var(--white);
   }
 
   &_logo {
     margin-left: 55px;
-    width: 21rem;
+    width: 22rem;
     display: block;
     padding: 13px 7px;
     position: absolute;
@@ -59,7 +59,7 @@
     path,
     rect,
     polygon {
-      fill: var(--brown);
+      fill: var(--white);
     }
   }
 }
